@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Authentification</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form  method="POST" #formLogin="ngForm">
+
+      <ion-item>
+        <ion-label>Login : </ion-label>
+        <ion-input type="text" name="username"  [(ngModel)]="loginUserData.username" name="username" ngModel placeholder="Nom"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label>Password : </ion-label>
+          <ion-input type="password" name="password" [(ngModel)]="loginUserData.password" name="password" ngModel placeholder="Mot de passe"></ion-input>
+        </ion-item>
+        <ion-button type="submit" class="btn btn-login" (click)="loginUser()">login</ion-button>
+    </form>
+</ion-content>

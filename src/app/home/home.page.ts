@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  public contact={
+    logo: "assets/images/transmoney.png",
+  }
 
   constructor() {}
 
